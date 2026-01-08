@@ -1,11 +1,18 @@
-/* from remark: */
-
-/* body { font-family: 'Droid Serif'; }
-h1, h2, h3 {
-  font-family: 'Yanone Kaffeesatz';
-  font-weight: normal;
+/* global variables & sets: */
+:root {
+  /* colours: */
+  --bg: rgb(253, 253, 253);
+  --primary: rgb(60, 60, 60);
+  --secondary: rgb(120, 120, 120);
+  --tertiary: rgb(240, 240, 240);
 }
-.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; } */
+
+html {
+  text-transform: lowercase;
+  background-color: var(--bg);
+
+  font-size: 14px; 
+}
 
 /* font-loads: */
 /* #region */
@@ -98,17 +105,20 @@ body {
 h1,
 h2,
 h3,
-p {
+p, li {
   font-family: "alegreya";
   color: var(--primary);
-  line-height: 1.2em;
   margin: 0.5em 0;
 }
 
 .remark-slide-content h1 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 3rem;
-  color: var(--primary);
+  line-height: 1.2em;
+}
+.remark-slide-content h2 {
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 figcaption {
@@ -119,6 +129,13 @@ figcaption {
   border-left: 0.25em solid var(--secondary);
   padding-left: 0.6em;
 }
+hr {
+  all: unset;
+  display: block;
+  height: 2px;
+  background-color: var(--tertiary);
+  margin: 1rem 0 ;
+}
 
 /* code stuff: */
 .remark-code,
@@ -128,24 +145,11 @@ figcaption {
 }
 .hljs-default .hljs,
 .hljs-default .hljs-subst {
+  background-color: var(--bg); 
   padding: 1rem;
 }
 
 /* endregion */
-
-/* global variables & sets: */
-:root {
-  /* colours: */
-  --bg: rgb(253, 253, 253);
-  --primary: rgb(60, 60, 60);
-  --secondary: rgb(120, 120, 120);
-  --tertiary: rgb(240, 240, 240);
-}
-
-html {
-  text-transform: lowercase;
-  background-color: var(--bg);
-}
 
 /* outside boundary */
 .remark-slide-container {
