@@ -10,6 +10,7 @@ so, this repository will contain all of my future presentations, which are now f
 - images are converted into `.webp`. short-videos are stored as 720p, 30fps files transcoded using [handbrake](https://handbrake.fr). both are stored in presentation-specific folders in ../assets/media.
 - if a piece of media has to be reused in a presentation, it just references the file-path on this github repository. 
 - all shared presentations (i.e `.html` file used to deliver my presentation) are stored in ../slides.
+- diagrams, flowcharts, circuits are either sketched on my ipad or made using [google-typograms](https://google.github.io/typograms/).
 
 ---
 
