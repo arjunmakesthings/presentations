@@ -12,6 +12,8 @@ html {
   background-color: var(--bg);
 
   font-size: 18px;
+
+  text-wrap: pretty;
 }
 
 /* font-loads: */
@@ -161,7 +163,7 @@ figure {
 figure img{
   max-height: 500px; 
   object-fit: cover;
-  
+
 }
 
 .two{
@@ -192,8 +194,13 @@ hr {
 }
 
 a{
+  text-decoration: underline dashed 0.04em;
+  text-underline-offset: 0.2em;
   color: rgb(214, 32, 91);
   text-decoration-style: dashed; 
+}
+figcaption a{
+  color: var(--secondary);
 }
 .grey{
   color: var(--secondary); 
