@@ -1278,7 +1278,7 @@ function create(script) {
 .diagram text, .glyph, .debug text {
   /** font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; **/
   /** font-family: Iosevka Fixed, monospace; **/
-  font-family: "fira-code";
+  font-family: "fira-code", monospace;
   font-size: 2.2em;
   text-anchor: middle;
   alignment-baseline: central;
