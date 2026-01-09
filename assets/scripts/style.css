@@ -183,6 +183,13 @@ a{
   color: rgb(214, 32, 91);
   text-decoration-style: dashed; 
 }
+.grey{
+  color: var(--secondary); 
+  opacity: 70%; 
+}
+.unbold{
+  font-weight: 400; 
+}
 
 /* endregion */
 
