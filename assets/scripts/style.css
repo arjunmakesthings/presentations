@@ -214,13 +214,19 @@ a{
 
 /* outside boundary */
 .remark-slide-container {
-  background-color: var(--tertiary);
+  background-color: var(--bg);
 }
 .remark-slide-scaler {
-  border: 1px solid var(--tertiary);
+  border: 0;
   box-shadow: 0 0 0 0;
 }
 
 .remark-slide-content {
   background-color: var(--bg);
+}
+
+.remark-slide-content {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat ;
 }
