@@ -194,6 +194,9 @@ a{
   color: var(--secondary); 
   opacity: 70%; 
 }
+.pink{
+  color: rgb(214, 32, 91); 
+}
 .unbold{
   font-weight: 400; 
 }
