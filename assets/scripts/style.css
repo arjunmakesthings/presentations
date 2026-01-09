@@ -200,6 +200,12 @@ a{
 .italic{
   font-style: italic; 
 }
+.footnote{
+  position: absolute; 
+  bottom: 3em; 
+  right: 3em; 
+  font-size: 0.8rem; 
+}
 
 /* endregion */
 
