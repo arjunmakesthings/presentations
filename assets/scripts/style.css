@@ -11,7 +11,7 @@ html {
   text-transform: lowercase;
   background-color: var(--bg);
 
-  font-size: 14px; 
+  font-size: 14px;
 }
 
 /* font-loads: */
@@ -105,7 +105,8 @@ body {
 h1,
 h2,
 h3,
-p, li {
+p,
+li {
   font-family: "alegreya";
   color: var(--primary);
   margin: 0.5em 0;
@@ -128,21 +129,39 @@ figcaption {
   font-size: 0.8rem;
   border-left: 0.25em solid var(--secondary);
   padding-left: 0.6em;
+  text-align: left; 
 }
-li{
+li {
   font-size: 1rem;
   list-style-type: square;
 }
-p{
+p {
   font-size: 1rem;
 }
+
+/* images: */
+figure {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+  justify-content: center;
+}
+
+.two{
+  display: flex; 
+  justify-content: space-between; 
+  gap: auto;
+  background-color: red; 
+}
+
 
 hr {
   all: unset;
   display: block;
   height: 2px;
   background-color: var(--tertiary);
-  margin: 1rem 0 ;
+  margin: 1rem 0;
 }
 
 /* code stuff: */
@@ -153,7 +172,7 @@ hr {
 }
 .hljs-default .hljs,
 .hljs-default .hljs-subst {
-  background-color: var(--bg); 
+  background-color: var(--bg);
   padding: 1rem;
 }
 
@@ -171,6 +190,3 @@ hr {
 .remark-slide-content {
   background-color: var(--bg);
 }
-
-
-
