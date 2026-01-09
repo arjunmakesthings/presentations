@@ -121,6 +121,10 @@ li {
   font-weight: 500;
   font-size: 2rem;
 }
+.remark-slide-content h3 {
+  font-weight: 400;
+  font-size: 2rem;
+}
 
 figcaption {
   font-family: "alegreya-sans";
@@ -173,6 +177,11 @@ hr {
 .hljs-default .hljs-subst {
   background-color: var(--bg);
   padding: 1rem;
+}
+
+a{
+  color: rgb(214, 32, 91);
+  text-decoration-style: dashed; 
 }
 
 /* endregion */
