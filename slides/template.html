@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="../assets/scripts/style.css" />
   </head>
   <body>
+    <!-- get typogram -->
+    <script src="../assets/scripts/typograms.js"></script>
+    
     <textarea id="source">
 class: top, left
 
@@ -142,6 +145,76 @@ return Math.sum(num_1, num_2);
 
 console.log(add(first, second)); 
 ```
+
+---
+
+# typograms: 
+
+<script type="text/typogram">
+  +------------------+
+  |  something here  | 
+  +------------------+
+          |
+          |
+          |
+          |
+          |
+  +------------------+         +------------------+
+  |  something else  |---------|something else bro|
+  +------------------+         +------------------+
+
+  just text -------- more text
+                          |
+                          |
+                          |
+                          |
+                          |
+                      more text------> going to more text
+    </script>
+
+---
+
+# or like a typogram diagram: 
+
+<script type="text/typogram">
+      "+10-15V"          ___0,047R
+      *---------o-----o-|___|-o--o---------o----o-------.
+   "+"|         |     |       |  |         |    |       |
+    -===-      _|_    |       | .+.        |    |       |
+    -===-      .-.    |       | | | 2k2    |    |       |
+    -===-    470|"+"  |       | | |        |    |      _|_
+   "-"|       uF|     '--.    | '+'       .+.   |      \ / LED
+      +---------o        |6   |7 |8    1k | |   |      -+-
+             ___|___   .-+----+--+--.     | |   |       |
+              -═══-    |            |     '+'   |       |
+                -      |            |1     |  |/  BC    |
+               GND     |            +------o--+   547   |
+                       |            |      |  |`>       |
+                       |            |     .+.   |       |
+               .-------+            | 220R| |   o----||-+  IRF9Z34
+               |       |            |     | |   |    |+->
+               |       |  MC34063   |     `+'   |    ||-+
+               |       |            |      |    |       |  BYV29     -12V6
+               |       |            |      '----'       o--|<-o----o--X OUT
+ 6000 micro "-"|"+"    |            |2                  |     |    |
+ Farad, 40V ___|_____  |            |--o                C|    |    |
+ Capacitor  ~ ~ ~ ~ ~  |            | GND         30uH  C|    |   --- 470
+               |       |            |3      1nF         C|    |   ###  uF
+               |       |            |-------||--.       |     |    | +
+               |       '-----+----+-'           |      GND    |   GND
+               |            5|   4|             |             |
+               |             |    '-------------o-------------o
+               |             |                           ___  |
+               `-------------*------/\/\/------------o--|___|-'
+                                     2k              |       1k0
+                                                    .+.
+                                                    | | 5k6 + 3k3
+                                                    | | in Serie
+                                                    '+'
+                                                     |
+                                                    GND
+
+</script>
 
 ---
 

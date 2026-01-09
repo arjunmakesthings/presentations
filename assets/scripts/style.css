@@ -152,7 +152,6 @@ figure {
   display: flex; 
   justify-content: space-between; 
   gap: auto;
-  background-color: red; 
 }
 
 
