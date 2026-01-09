@@ -52,12 +52,104 @@
 
       # we're similar; <br> you & i. 
 
+      ---
+
+      class: middle center 
+
+      <figure>
+        <video preload="yes" muted autoplay nocontrols loop height = "500">
+          <source
+            src="../assets/media/common/showcase-loop_2.mp4"
+            type="video/mp4"
+          />
+          your browser does not support videos.
+        </video>
+      </figure>
+
+      ---
+
+      class: middle 
+
+      .grey[m.p.s. in interactive telecommunications @nyu]
+
+      ## ITP’s mission is to explore the <strong>imaginative use</strong> of communications <strong>technologies</strong>.<br><br> ... (it) is sometimes described as an <strong>art school for engineers</strong> and at the same time <strong>an engineering school for artists</strong>.
+
+      ---
+
+      class: middle center
+
+      <iframe width = "889" height="500" src="https://www.youtube.com/embed/4fMQ44g6BfM?si=BGTxp8QZqeds-0By" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+
+      ---
+
+      class: middle
+
+      # <a href = "https://runwayml.com/" target = "_blank">runway-ml -></a>
+
+      ---
+
+      class: middle
+
+      # <a href = "https://arjunmakesthings.github.io/hypercinema_2510" target = "_blank">dear runway -></a>
+
+      ---
+
+      class: middle 
+
+      # today, we frequently interact with electricity,<br> but we understand very little about it.
+
+      ---
+
+      class: middle
+
+      # It’s Little Greenies.
+      
+      ## That’s right. Little Greenies. It’s not electrons at all. Electrons are a myth, a superstition. They don’t make sense, they’re boring, and they’ve never been proved. Shoot, I’ve never seen an electron, have you? Of course not. No one has.
+
+      ---
+
+      class: middle
+
+      <figure>
+        <video preload="yes" muted playsinline controls loop height = "500">
+          <source
+            src="https://arjunmakesthings.github.io/projects/2025_little-green-things/combined_compressed.mp4"
+            type="video/mp4"
+          />
+          your browser does not support videos.
+        </video>
+      </figure>
+
+      ---
+
+      class: middle center
+
+      <figure class = "center">
+          <img src="https://arjunmakesthings.github.io/projects/2025_little-green-things/1.webp" height="auto" width = "800">
+        <figcaption>whatever bro; 2025.</figcaption>
+        </figure>
+
     </textarea>
     <script src="../assets/scripts/remark.js"></script>
     <script>
       /*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
+
+      // get actual width and height of browser viewport (including any toolbars)
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      // calculate the ratio as a string like "16:10"
+      const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+      let w = width;
+      let h = height;
+      const factor = gcd(w, h);
+      w /= factor;
+      h /= factor;
+
+      const dynamicRatio = `${w}:${h}`;
+
       var slideshow = remark.create({
-        ratio: "16:10",
+        ratio: dynamicRatio,
         slideNumberFormat: "",
         navigation: {
           scroll: false,
