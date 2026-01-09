@@ -11,7 +11,7 @@ html {
   text-transform: lowercase;
   background-color: var(--bg);
 
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* font-loads: */
@@ -28,6 +28,13 @@ html {
   src: url("../fonts/alegreya_italic.woff2") format("woff2");
   font-style: italic;
   font-weight: 400;
+  font-display: block;
+}
+@font-face {
+  font-family: "alegreya";
+  src: url("../fonts/alegreya_medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
   font-display: block;
 }
 @font-face {
@@ -114,16 +121,16 @@ li {
 
 .remark-slide-content h1 {
   font-weight: 600;
-  font-size: 3rem;
-  line-height: 1.2em;
+  font-size: 2rem;
+  line-height: 1.3em;
 }
 .remark-slide-content h2 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 2rem;
 }
 .remark-slide-content h3 {
-  font-weight: 400;
-  font-size: 2rem;
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 
 figcaption {
@@ -189,6 +196,9 @@ a{
 }
 .unbold{
   font-weight: 400; 
+}
+.italic{
+  font-style: italic; 
 }
 
 /* endregion */
