@@ -158,6 +158,11 @@ figure {
 
   justify-content: center;
 }
+figure img{
+  max-height: 500px; 
+  object-fit: cover;
+  
+}
 
 .two{
   display: flex; 
@@ -227,6 +232,6 @@ a{
 
 .remark-slide-content {
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat ;
+  /* background-position: center;
+  background-repeat: no-repeat ; */
 }
