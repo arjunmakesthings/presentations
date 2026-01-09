@@ -67,12 +67,69 @@ background-image: url("/assets/media/2601_template/1.webp")
 # full image: 
 
 ---
+ # single video: 
+
+<figure>
+  <video preload="yes" muted playsinline autoplay nocontrols loop height = "500">
+    <source
+      src="../assets/media/2601_template/light+Sand.mp4"
+      type="video/mp4"
+    />
+    your browser does not support videos.
+  </video>
+  <figcaption>shit i made; 2025.</figcaption>
+</figure>
+
+---
+
+# many videos: 
+
+<figure>
+  <div class = "two">
+  <video preload="yes" muted playsinline autoplay nocontrols loop height = "400">
+    <source
+      src="../assets/media/2601_template/light+Sand.mp4"
+      type="video/mp4"
+    />
+    your browser does not support videos.
+  </video>
+  <video preload="yes" muted playsinline autoplay nocontrols loop height = "400">
+    <source
+      src="../assets/media/2601_template/light+Sand.mp4"
+      type="video/mp4"
+    />
+    your browser does not support videos.
+  </video>
+</div>
+  <figcaption>shit i made; 2025.</figcaption>
+</figure>
+
+---
+
+ # one video with audio: 
+
+<figure>
+  <video preload="yes" loop controls height = "500">
+    <source
+      src="../assets/media/2601_template/16_e2052.mp4"
+      type="video/mp4"
+    />
+    your browser does not support videos.
+  </video>
+  <figcaption>shit i made; 2025.</figcaption>
+</figure>
+
+---
+
+class: middle left
 
 # special stuff ->
 
 ---
 
-class: middle, left
+class: top, left
+
+.left[# code:] 
 
 ``` javascript
 var first = 2; 
@@ -85,6 +142,14 @@ return Math.sum(num_1, num_2);
 
 console.log(add(first, second)); 
 ```
+
+---
+
+# lists: 
+
+- item 1
+- item 2
+- whatever
 
 
     </textarea>
