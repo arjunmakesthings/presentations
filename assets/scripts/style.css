@@ -226,7 +226,7 @@ figcaption a{
 
 /* outside boundary */
 .remark-slide-container {
-  background-color: var(--bg);
+  background-color: black;
 }
 .remark-slide-scaler {
   border: 0;
