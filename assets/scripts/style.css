@@ -166,6 +166,11 @@ figure img{
 
 }
 
+#center{
+  justify-content: center;
+  align-items: center;
+}
+
 .two{
   display: flex; 
   justify-content: space-between; 

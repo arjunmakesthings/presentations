@@ -1247,7 +1247,7 @@ function create(script) {
   }
   @font-face {
     font-family: "fira-code";
-    font-size: 16px;
+    font-size: 18px;
     src: url("../fonts/fira-code_regular.woff2");
     font-style: normal;
     font-weight: 300;
@@ -1279,7 +1279,7 @@ function create(script) {
   /** font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; **/
   /** font-family: Iosevka Fixed, monospace; **/
   font-family: "fira-code", monospace;
-  font-size: 2.2em;
+  font-size: 3em;
   text-anchor: middle;
   alignment-baseline: central;
   white-space: pre;
