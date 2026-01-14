@@ -247,3 +247,6 @@ figcaption a{
   /* background-position: center;
   background-repeat: no-repeat ; */
 }
+.remark-toolbar-timer{
+  display: none !important; 
+}
