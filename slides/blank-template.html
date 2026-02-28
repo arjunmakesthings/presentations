@@ -17,12 +17,28 @@
     <script src="../assets/scripts/remark.js"></script>
     <script>
       /*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
+
+      // get actual width and height of browser viewport (including any toolbars)
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      // calculate the ratio as a string like "16:10"
+      const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+      let w = width;
+      let h = height;
+      const factor = gcd(w, h);
+      w /= factor;
+      h /= factor;
+
+      const dynamicRatio = `${w}:${h}`;
+
       var slideshow = remark.create({
-        ratio: "16:10",
+        ratio: dynamicRatio,
         slideNumberFormat: "",
-        navigation:{
-          scroll:false
-        }
+        navigation: {
+          scroll: false,
+        },
+        
       });
     </script>
   </body>
