@@ -250,3 +250,8 @@ figcaption a{
 .remark-toolbar-timer{
   display: none !important; 
 }
+#white {
+  border: 1.5px solid var(--tertiary);
+  padding: 0.01rem;
+  box-sizing: border-box;
+}

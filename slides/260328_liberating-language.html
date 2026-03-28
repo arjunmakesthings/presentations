@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <title>living-messages</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/scripts/style.css" />
+  </head>
+  <body>
+    <!-- get typogram -->
+    <script src="../assets/scripts/typograms.js"></script>
+
+    <!-- reference for everything is here: https://github.com/gnab/remark/wiki -->
+
+<textarea id="source">
+class: middle left
+
+# .pink[living messages]<br>
+.footnote.grey[by arjun; for liberating-language-museum-showcase; <br>at new-york-university; april, 2026.]
+
+---
+
+class: middle top
+
+    <figure>
+    <video preload="yes" muted playsinline autoplay nocontrols loop height = "500">
+    <source
+    src="../assets/media/common/showcase-loop_2.mp4"
+    type="video/mp4"
+    />
+    your browser does not support videos.
+    </video>
+    <figcaption>a collection of things, largely made with code, in 2022.</figcaption>
+    </figure>
+
+---
+
+class: middle left
+
+###.unbold[What can a typographer do to address the imbalance, to harness, shape and organise words in service of breaking barriers? To encourage reflection, respect, and self-awareness between communities?]
+<figcaption>from the international-society-of-typographic-designers student brief, 2021.</figcaption>
+<!-- <figcaption>from the international society of typographic designers brief, 2021.</figcaption> -->
+<!-- .grey.italic[from the International Society of Typographic Designers brief, 2021.] -->
+
+---
+
+class: middle center
+
+<figure>
+    <img id = "white" src  = "https://arjunmakesthings.github.io/projects/2021_dear-delhi/3.0.webp" height="500">
+    <figcaption>largely derived from duncan mcduie-ra's ethnographic study: Northeast Migrants in Delhi: Race, Refuge and Retail.</figcaption>
+</figure>
+
+---
+
+class: middle center
+
+<figure>
+    <img src = "https://arjunmakesthings.github.io/projects/2021_dear-delhi/O1.webp" height="500">
+    <figcaption>dear delhi; 2021.</figcaption>
+</figure>
+
+---
+
+class: middle center
+
+---
+
+</textarea>
+    <script src="../assets/scripts/remark.js"></script>
+    <script>
+      /*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
+
+      // get actual width and height of browser viewport (including any toolbars)
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      // calculate the ratio as a string like "16:10"
+      const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+      let w = width;
+      let h = height;
+      const factor = gcd(w, h);
+      w /= factor;
+      h /= factor;
+
+      const dynamicRatio = `${w}:${h}`;
+
+      var slideshow = remark.create({
+        // ratio: dynamicRatio,
+        ratio: "16:9",
+        slideNumberFormat: "",
+        navigation: {
+          scroll: false,
+        },
+      });
+    </script>
+  </body>
+</html>
