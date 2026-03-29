@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>filled-template</title>
@@ -64,8 +64,8 @@ class: top left
 
 <figure>
 <div class = "two">
-  <img src="../assets/media/2601_template/1.webp" height="400">
-  <img src="../assets/media/2601_template/1.webp" height="400">
+  <img src="../assets/media/2601_template/1.webp">
+  <img src="../assets/media/2601_template/1.webp">
 </div>
 <figcaption>whatever bro; 2025.</figcaption>
 </figure>
@@ -81,7 +81,7 @@ background-image: url("../assets/media/2601_template/1.webp")
  # single video: 
 
 <figure>
-  <video preload="yes" muted playsinline autoplay nocontrols loop height = "500">
+  <video preload="yes" muted playsinline autoplay nocontrols loop>
     <source
       src="../assets/media/2601_template/light+Sand.mp4"
       type="video/mp4"
@@ -120,7 +120,7 @@ background-image: url("../assets/media/2601_template/1.webp")
  # one video with audio: 
 
 <figure>
-  <video preload="yes" loop controls height = "500">
+  <video preload="yes" loop controls>
     <source
       src="../assets/media/2601_template/16_e2052.mp4"
       type="video/mp4"
@@ -142,16 +142,18 @@ class: top, left
 
 .left[# code:] 
 
-``` javascript
+``` js
 var first = 2; 
 let second = 1; 
 
 
 function add (num_1, num_2){
-return Math.sum(num_1, num_2); 
+  return Math.sum(num_1, num_2); 
 }
 
 console.log(add(first, second)); 
+
+console.log ("Woah"); 
 ```
 
 ---
@@ -270,7 +272,6 @@ class: middle left
         navigation: {
           scroll: false,
         },
-        
       });
     </script>
   </body>

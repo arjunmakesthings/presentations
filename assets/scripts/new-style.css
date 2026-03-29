@@ -188,7 +188,6 @@ figure {
   margin-right: auto;
 
   /* background-color: red;  */
-  border: 1px solid red; 
   width: fit-content;
   height: 85%; 
   max-height: 85% !important; 
@@ -234,9 +233,16 @@ hr {
 }
 .hljs-default .hljs,
 .hljs-default .hljs-subst {
-  background-color: var(--bg);
+  background-color: var(--tertiary);
   padding: 1rem;
+  max-width: 75%; 
+  text-wrap: wrap; 
 }
+
+/* .remark-code,
+.remark-inline-code {
+  all: unset;
+} */
 
 /* endregion */
 
