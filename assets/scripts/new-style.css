@@ -138,7 +138,36 @@ li {
   font-size: 1rem;
   list-style-type: square;
 }
-
+a{
+  text-decoration: underline dashed 0.04em;
+  text-underline-offset: 0.2em;
+  color: rgb(214, 32, 91);
+  text-decoration-style: dashed; 
+}
+figcaption a{
+  color: var(--secondary);
+}
+.grey{
+  color: var(--secondary); 
+  opacity: 70%; 
+}
+.pink{
+  color: var(--pink); 
+}
+.unbold{
+  font-weight: 400; 
+}
+.italic{
+  font-style: italic; 
+}
+.footnote{
+  position: absolute; 
+  bottom: 3em; 
+  right: 3em; 
+  font-size: 0.8rem; 
+  color: var(--secondary); 
+  opacity: 70%; 
+}
 figcaption {
   font-family: "alegreya-sans";
   color: var(--secondary);
@@ -155,25 +184,39 @@ figure {
   flex-direction: column;
   gap: 0.5em;
 
+  margin-left: auto;
+  margin-right: auto;
+
+  /* background-color: red;  */
+  border: 1px solid red; 
+  width: fit-content;
+  height: 85%; 
+  max-height: 85% !important; 
   justify-content: center;
 }
-figure img{
+figure img, .two img, figure video, .two video{
+  width: auto; 
   max-height: 500px; 
   object-fit: cover;
-
 }
-
-#center{
+/* #center{
+  display: flex; 
   justify-content: center;
-  align-items: center;
-}
+  height: 85%; 
+} */
 
 .two{
   display: flex; 
   justify-content: space-between; 
-  gap: auto;
+  gap: 2em;
+  align-items: center;
+  max-height: 500px; 
 }
-
+#white {
+  border: 1.5px solid var(--tertiary);
+  padding: 0.01rem;
+  box-sizing: border-box;
+}
 
 hr {
   all: unset;
@@ -193,35 +236,6 @@ hr {
 .hljs-default .hljs-subst {
   background-color: var(--bg);
   padding: 1rem;
-}
-
-a{
-  text-decoration: underline dashed 0.04em;
-  text-underline-offset: 0.2em;
-  color: rgb(214, 32, 91);
-  text-decoration-style: dashed; 
-}
-figcaption a{
-  color: var(--secondary);
-}
-.grey{
-  color: var(--secondary); 
-  opacity: 70%; 
-}
-.pink{
-  color: rgb(214, 32, 91); 
-}
-.unbold{
-  font-weight: 400; 
-}
-.italic{
-  font-style: italic; 
-}
-.footnote{
-  position: absolute; 
-  bottom: 3em; 
-  right: 3em; 
-  font-size: 0.8rem; 
 }
 
 /* endregion */
@@ -246,9 +260,4 @@ figcaption a{
 }
 .remark-toolbar-timer{
   display: none !important; 
-}
-#white {
-  border: 1.5px solid var(--tertiary);
-  padding: 0.01rem;
-  box-sizing: border-box;
 }

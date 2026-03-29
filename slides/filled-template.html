@@ -31,11 +31,13 @@ normal text.
 - everyone loves bullet points.
 - i don't quite know why.
 
+.footnote[something; by something.<br>something more.]
+
 ---
 
 class: middle, left
 
-# this is a big quote to share, by someone and something; <br>i .grey.unbold[made] it long so that it long so that .grey[only some words] wrap around; you know?
+# this is a big quote to share, by .pink[someone] and something; <br>i .grey.unbold[made] it long so that it long so that .grey[only some words] wrap around; you know?
 <figcaption>some kind of caption, credited to someone; 2025.</figcaption>
 
 
@@ -45,17 +47,20 @@ class: middle, left
 # media ->
 
 ---
-class: top, left
+class: top left
 
-.left[### single image:] 
+### single image:
 
-  .center[<img src = "../assets/media/2601_template/1.webp" height="500">]
+<figure>
+  <img src = "../assets/media/2601_template/1.webp">
+  <figcaption>always tell where it's from or whatever.</figcaption>
+</figure>
 
 ---
 
-class: top, left
+class: top left
 
-.left[### split images:] 
+### split images:
 
 <figure>
 <div class = "two">
@@ -92,14 +97,14 @@ background-image: url("../assets/media/2601_template/1.webp")
 
 <figure>
   <div class = "two">
-  <video preload="yes" muted playsinline autoplay nocontrols loop height = "400">
+  <video preload="yes" muted playsinline autoplay nocontrols loop>
     <source
       src="../assets/media/2601_template/light+Sand.mp4"
       type="video/mp4"
     />
     your browser does not support videos.
   </video>
-  <video preload="yes" muted playsinline autoplay nocontrols loop height = "400">
+  <video preload="yes" muted playsinline autoplay nocontrols loop>
     <source
       src="../assets/media/2601_template/light+Sand.mp4"
       type="video/mp4"
@@ -235,11 +240,9 @@ class: middle left
 
 ---
 
-class: middle center
+.left[# iframes:]
 
-.bottom[#iframes:] 
-
-<iframe width = "889" height="500" src="https://www.youtube.com/embed/4fMQ44g6BfM?si=OFf0KUsX7oH0o_C9" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+<figure><iframe width = "889" height="500" src="https://www.youtube.com/embed/4fMQ44g6BfM?si=OFf0KUsX7oH0o_C9" frameborder="0" allow="encrypted-media" allowfullscreen></iframe><figcaption>something. </figcaption></figure>
 
     </textarea>
     <script src="../assets/scripts/remark.js"></script>
