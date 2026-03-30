@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <title>'good' physical computing</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/scripts/new-style.css" />
+  </head>
+  <body>
+    <!-- get typogram -->
+    <script src="../assets/scripts/typograms.js"></script>
+
+    <!-- reference for everything is here: https://github.com/gnab/remark/wiki -->
+
+    <textarea id="source">
+
+class: middle left
+
+  # title
+  .footnote.grey[by arjun; for ima-physical-computing; <br>at new-york-university; march, 2026.]
+
+---
+
+class: left middle
+
+## create an interactive work that uses concepts & techniques you learned from the class.
+<figcaption>from the <a href = "https://itp.nyu.edu/classes/ima-physical/final-project/">course-website</a>.</figcaption>
+
+---
+
+class: left middle
+
+## create an <mark>interactive</mark> work that uses <mark>concepts & techniques you learned</mark> from the class.
+<figcaption>from the <a href = "https://itp.nyu.edu/classes/ima-physical/final-project/">course-website</a>.</figcaption>
+
+---
+
+class: left middle
+
+## what makes a <strong>good</strong> physical computing project?
+
+---
+
+class: left top
+
+making it 'easy' to use:
+
+<figure>
+  <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcodemoto.io%2Fwp-content%2Fthemes%2Fcloudhost%2Flibrary%2Fimages%2Freact-delete-confirmation-modal.png&f=1&nofb=1&ipt=0c6a0e0c41848d10232291cc6d78844fa35f19052e66f228ee182ba7c96eb1cc" width = "500px">
+  <figcaption>kissing booth, by a student in tom-igoe's class.</figcaption>
+</figure>
+
+---
+
+class: left top
+
+should be about the electronics:
+
+<figure><iframe width = "889" height="500" src="https://www.youtube.com/embed/Nl-6WQptShM?si=mcG86vCGhfy3LCT3" frameborder="0" allow="encrypted-media" allowfullscreen></iframe><figcaption>something.</figcaption></figure>
+
+---
+
+class: middle 
+
+## so then, what is a 'good' project?
+
+---
+
+class: middle
+
+## take a big piece of paper.
+
+---
+
+class: middle 
+
+## find all the physical-computing projects that <br><strong>feel</strong> like good projects to <strong>you</strong>.
+.grey[search the internet, scour through saved-media, go out, photograph; whatever.<br>the more you have, the more it helps.]
+
+---
+
+class: middle 
+
+## for each, write: what about them feels good?
+.grey[(obviously could be >1 reasons.)]
+
+---
+
+class: left middle 
+
+## articulate to someone else why you like them.<br>someone else: note down patterns for them
+what exists across projects in their definition of good?
+
+---
+
+class: middle
+
+ <figure><iframe width = "889" height="500" src="https://www.youtube.com/embed/PUv66718DII?si=6q-6Rr0V4zL4K4gs&amp;start=30;end=144" frameborder="0" allow="encrypted-media" allowfullscreen></iframe><figcaption>from brett victor's <a href = "https://www.youtube.com/watch?v=PUv66718DII"><em>inventing on principle</em></a>.</figcaption></figure>
+
+---
+
+class: middle
+
+ <figure><iframe width = "889" height="500" src="https://www.youtube.com/embed/PUv66718DII?si=6q-6Rr0V4zL4K4gs&amp;start=710" frameborder="0" allow="encrypted-media" allowfullscreen></iframe><figcaption>from brett victor's <a href = "https://www.youtube.com/watch?v=PUv66718DII"><em>inventing on principle</em></a>.</figcaption></figure>
+
+---
+
+class: middle
+
+## you're going to <em>have</em> to make a project for this class. 
+
+--
+
+# might as well be about something you care about.
+
+---
+
+class: middle
+
+## define (via a list) what a 'good' physical-computing-final will be for you.
+.grey[jesse & arjun will use this from next week onwards to give you feedback, nudge you in the right directions & critique your project at the end.]
+
+---
+
+class: middle
+
+arjun's examples: -> <a href = "https://arjunmakesthings.github.io/itp-blog/intro-to-physical-computing/midterm-log">midterm</a> -> <a href = "https://arjunmakesthings.github.io/itp-blog/intro-to-physical-computing/midterm-reflection">midterm reflection</a> -> <a href = "https://arjunmakesthings.github.io/itp-blog/intro-to-physical-computing/final-project-2_log">final</a> -> <a href = "https://arjunmakesthings.github.io/itp-blog/my-principles-as-a-creator">principles</a>.
+
+
+</textarea
+    >
+    <script src="../assets/scripts/remark.js"></script>
+    <script>
+      /*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
+
+      // get actual width and height of browser viewport (including any toolbars)
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      // calculate the ratio as a string like "16:10"
+      const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+      let w = width;
+      let h = height;
+      const factor = gcd(w, h);
+      w /= factor;
+      h /= factor;
+
+      const dynamicRatio = `${w}:${h}`;
+
+      var slideshow = remark.create({
+        // ratio: dynamicRatio,
+        ratio: "16:9",
+        slideNumberFormat: "",
+        navigation: {
+          scroll: false,
+        },
+      });
+    </script>
+  </body>
+</html>

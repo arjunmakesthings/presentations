@@ -196,6 +196,7 @@ figure {
 figure img, .two img, figure video, .two video{
   width: auto; 
   max-height: 500px; 
+  max-width: 1000px; 
   object-fit: cover;
 }
 /* #center{
@@ -266,4 +267,8 @@ hr {
 }
 .remark-toolbar-timer{
   display: none !important; 
+}
+
+mark {
+  background-color: #fff6d1;
 }
