@@ -14,5 +14,9 @@ so, this repository will contain all of my future presentations, which are now f
 
 ---
 
+while presenting, often during workshops where the slides aren't being changed much, the mac goes off to sleep. i don't want to keep changing power-settings all the time; so, i use `caffeinate` instead. 
+
+---
+
 ### acknowledgements: 
 sangarshanan's [talks repository](https://github.com/Sangarshanan/talks) for the inspiration, and ole petter bang's work on [remark.js](https://github.com/gnab/remark).
