@@ -14,7 +14,7 @@ so, this repository will contain all of my future presentations, which are now f
 
 ---
 
-while presenting, often during workshops where the slides aren't being changed much, the mac goes off to sleep. i don't want to keep changing power-settings all the time; so, i use `caffeinate` instead. 
+while presenting, often during workshops where the slides aren't being changed much, the mac goes off to sleep. i don't want to keep changing power-settings all the time; so, i use `caffeinate` on my terminal instead. 
 
 ---
 
