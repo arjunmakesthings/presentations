@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <title>name</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/scripts/new-style.css" />
+  </head>
+  <body>
+    <!-- get typogram -->
+    <script src="../assets/scripts/typograms.js"></script>
+
+    <!-- reference for everything is here: https://github.com/gnab/remark/wiki -->
+
+    <textarea id="source">
+
+  class: middle left
+
+  # how (and why) to shut up & listen:
+  .footnote.grey[by arjun; for ima-physical-computing; <br>at 
+  new-york-university; april, 2026.]
+
+  ---
+
+  class: middle 
+
+
+  ## Behold a modest yet quietly profound installation: a contemplative study in cause, intention, and illumination. At first glance, the object appears almost insultingly simple—a small, circular form resting on a plain surface. Yet it reveals itself as a mediator between thought and outcome.
+
+  ---
+
+  class: middle
+
+  ## The participant, drawn into an unspoken contract, extends a finger. A brief, charged pause—then the press: a soft resistance giving way, a moment where intention becomes action.
+
+  ---
+
+  class: middle 
+
+  ## Inside, something unseen stirs. A hidden path completes itself, a quiet flow set into motion.
+
+  ---
+
+  class: middle 
+
+  ## And then—light. A small glow appears: steady, deliberate, undeniable. Not merely brightness, but proof—an idea made visible.When the finger lifts, everything returns to stillness. The glow disappears, leaving only the memory of connection.
+
+  ---
+
+  class: middle 
+
+  Behold a modest yet quietly profound installation: a contemplative study in cause, intention, and illumination. At first glance, the object appears almost insultingly simple—a small, circular form resting on a plain surface. Yet it reveals itself as a mediator between thought and outcome.
+
+  The participant, drawn into an unspoken contract, extends a finger. A brief, charged pause—then the press: a soft resistance giving way, a moment where intention becomes action.
+
+  Inside, something unseen stirs. A hidden path completes itself, a quiet flow set into motion.
+
+  And then—light.
+
+  A small glow appears: steady, deliberate, undeniable. Not merely brightness, but proof—an idea made visible.
+
+  When the finger lifts, everything returns to stillness. The glow disappears, leaving only the memory of connection.
+
+  .footnote.grey[chat-gpt--garbage describing a rather simpler piece.]
+
+
+
+  ---
+
+  class: middle 
+
+  ## Quite often I see artists who venture into interactive art start by making interactive artworks and offering interpretation in the notes beside them.
+  .footnote.grey[borrowed from tom igoe's <a href = "https://www.tigoe.com/blog/category/physicalcomputing/405/">blogpost</a>.]
+
+  ---
+
+  class: middle 
+
+  ## They’ll describe the work, then tell you what each element means,and what the participant will do with those elements.  They pre-script what will happen.
+  
+  .footnote.grey[borrowed from tom igoe's <a href = "https://www.tigoe.com/blog/category/physicalcomputing/405/">blogpost</a>.]
+
+  ---
+
+  class: middle
+
+  ## When you do that, you’re telling the participant what to think, and by extension, how to act. Is that what you wanted?
+
+  .footnote.grey[borrowed from tom igoe's <a href = "https://www.tigoe.com/blog/category/physicalcomputing/405/">blogpost</a>.]
+
+  ---
+
+  class: middle
+
+  ## It’s a hard shift for some artists to think about making interactive work because we’re taught that a work of art is a work of expression. It’s a statement.  
+  .footnote.grey[borrowed from tom igoe's <a href = "https://www.tigoe.com/blog/category/physicalcomputing/405/">blogpost</a>.]
+  
+  ---
+
+  class: middle
+  
+  ## Interactive work is different. The thing you build, whether it’s a device or a whole environment, is just the beginning of a conversation with the people who experience your work.
+
+  .footnote.grey[borrowed from tom igoe's <a href = "https://www.tigoe.com/blog/category/physicalcomputing/405/">blogpost</a>.]
+
+  ---
+
+  class: middle
+
+  ## Your task in designing an interactive artwork is to give your audience the basic context, then get out of their way. 
+
+  .footnote.grey[borrowed from tom igoe's <a href = "https://www.tigoe.com/blog/category/physicalcomputing/405/">blogpost</a>.]
+  
+  ---
+  
+  class: middle 
+  
+  ## Arrange the space, put in the items through they can take action, suggest a sequence of events through juxtaposition. If you want them to handle something, give it a handle. If they’re not supposed to touch something, don't make it approachable. If they’re supposed to discover something hidden, give hints. Remove anything extraneous.
+
+  .footnote.grey[borrowed from tom igoe's <a href = "https://www.tigoe.com/blog/category/physicalcomputing/405/">blogpost</a>.]
+
+  ---
+
+  class: middle
+
+  ## Once you’ve made your initial statement by building the thing or the environment and designing its behaviors, shut up. Let the audience listen to your work by taking it in through their senses ... Let them speak through their actions.
+
+  .footnote.grey[borrowed from tom igoe's <a href = "https://www.tigoe.com/blog/category/physicalcomputing/405/">blogpost</a>.]
+
+</textarea
+    >
+    <script src="../assets/scripts/remark.js"></script>
+    <script>
+      /*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
+
+      // get actual width and height of browser viewport (including any toolbars)
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      // calculate the ratio as a string like "16:10"
+      const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+      let w = width;
+      let h = height;
+      const factor = gcd(w, h);
+      w /= factor;
+      h /= factor;
+
+      const dynamicRatio = `${w}:${h}`;
+
+      var slideshow = remark.create({
+        // ratio: dynamicRatio,
+        ratio: "16:9",
+        slideNumberFormat: "",
+        navigation: {
+          scroll: false,
+        },
+      });
+    </script>
+  </body>
+</html>
