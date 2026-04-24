@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <title>name</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/scripts/new-style.css" />
+  </head>
+  <body>
+    <!-- get typogram -->
+    <script src="../assets/scripts/typograms.js"></script>
+
+    <!-- reference for everything is here: https://github.com/gnab/remark/wiki -->
+
+    <textarea id="source">
+
+      class: middle left
+
+        susan: Got any ideas? 
+
+        jon: Just questions. 
+
+        susan: That seems like a really good place to start.
+
+      <figcaption>from tick, tick ... boom.</figcaption>
+
+      .footnote[bioart-as-biopolitcs<br>final-project-presentation<br>by arjun; april-2026.]
+
+      ---
+
+      class: middle left
+
+      # cultivate fearless experimentalism.
+
+      <figcaption>learning objective #1 from the 2026-syllabus. </figcaption>
+
+      ---
+
+      class: middle left
+
+      ## #1: can i pick up human-dna & living organisms as working material & just run with it; much like i can do with code or electricity?
+
+      ---
+
+      class: middle
+
+      <figure>
+        <img id = "white" src = "https://www.dnainthenews.com/wp-content/uploads/sites/89/science_mtdna-1.png">
+        <figcaption>on mtdna, by dnainthenews.com.</figcaption>
+      </figure>
+
+      ---
+
+      class: middle left
+
+      ## genetic transfer is (largely) out of our control.
+
+      .grey[albeit epigenetics is a growing field, and makes me more conscious of my choices (because their impact may be passed down to my progeny). see <a href = "https://www.nature.com/articles/s41598-025-89818-z">mulligan, et. al.,  2025.</a>]
+
+      ---
+
+      class: middle left
+
+      ## a piece of my maternal lineage dies with me.
+
+      ---
+
+      class: middle left
+
+      ## #2: 
+    </textarea>
+    <script src="../assets/scripts/remark.js"></script>
+    <script>
+      /*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
+
+      // get actual width and height of browser viewport (including any toolbars)
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      // calculate the ratio as a string like "16:10"
+      const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+      let w = width;
+      let h = height;
+      const factor = gcd(w, h);
+      w /= factor;
+      h /= factor;
+
+      const dynamicRatio = `${w}:${h}`;
+
+      var slideshow = remark.create({
+        // ratio: dynamicRatio,
+        ratio: "16:9",
+        slideNumberFormat: "",
+        navigation: {
+          scroll: false,
+        },
+      });
+    </script>
+  </body>
+</html>
