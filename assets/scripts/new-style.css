@@ -212,6 +212,12 @@ figure img, .two img, figure video, .two video{
   align-items: center;
   max-height: 500px; 
 }
+.two img, .two video{
+  width: 48%; 
+  max-height: 500px; 
+  max-width: 1000px; 
+  object-fit: cover;
+}
 #white {
   border: 1.5px solid var(--tertiary);
   padding: 0.01rem;
