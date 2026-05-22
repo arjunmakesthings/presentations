@@ -5,7 +5,15 @@
   --primary: rgb(60, 60, 60);
   --secondary: rgb(120, 120, 120);
   --tertiary: rgb(240, 240, 240);
-  --pink: rgb(214, 32, 91); 
+}
+
+html {
+  text-transform: lowercase;
+  background-color: var(--bg);
+
+  font-size: 18px;
+
+  text-wrap: pretty;
 }
 
 /* font-loads: */
@@ -97,77 +105,36 @@
 }
 /* #endregion */
 
-html {
-  background-color: var(--bg);
-  font-size: 18px;
-  text-wrap: pretty;
+/* font-sets: */
+/* #region */
+body {
+  font-family: "alegreya";
 }
 
-/* font-sets: */
-h1, h2, h3, p, figcaption, li {
-  text-transform: lowercase;
-  max-width: 75%; 
+h1,
+h2,
+h3,
+p,
+li {
   font-family: "alegreya";
   color: var(--primary);
-  /* margin: 0.5em 0; */
-  /* background-color: red;  */
+  margin: 0.5em 0;
 }
 
-/* you have to address everything inside remark-slide-content: */
-/* h1 is big & bold */
 .remark-slide-content h1 {
   font-weight: 600;
   font-size: 2rem;
   line-height: 1.3em;
 }
-/* h2 is same & unbold */
 .remark-slide-content h2 {
   font-weight: 400;
   font-size: 2rem;
 }
-/* h3 is small and bold */
 .remark-slide-content h3 {
   font-weight: 500;
   font-size: 1.3rem;
 }
-.remark-slide-content p {
-  font-size: 1rem;
-  line-height: 1.2em;
-}
-li {
-  font-size: 1rem;
-  list-style-type: square;
-}
-a{
-  text-decoration: underline dashed 0.04em;
-  text-underline-offset: 0.2em;
-  color: rgb(214, 32, 91);
-  text-decoration-style: dashed; 
-}
-figcaption a{
-  color: var(--secondary);
-}
-.grey{
-  color: var(--secondary); 
-  opacity: 70%; 
-}
-.pink{
-  color: var(--pink); 
-}
-.unbold{
-  font-weight: 400; 
-}
-.italic{
-  font-style: italic; 
-}
-.footnote{
-  position: absolute; 
-  bottom: 3em; 
-  right: 3em; 
-  font-size: 0.8rem; 
-  color: var(--secondary); 
-  opacity: 70%; 
-}
+
 figcaption {
   font-family: "alegreya-sans";
   color: var(--secondary);
@@ -177,6 +144,13 @@ figcaption {
   padding-left: 0.6em;
   text-align: left; 
 }
+li {
+  font-size: 1rem;
+  list-style-type: square;
+}
+p {
+  font-size: 1rem;
+}
 
 /* images: */
 figure {
@@ -184,45 +158,25 @@ figure {
   flex-direction: column;
   gap: 0.5em;
 
-  margin-left: auto;
-  margin-right: auto;
-
-  /* background-color: red;  */
-  width: fit-content;
-  height: 85%; 
-  max-height: 85% !important; 
   justify-content: center;
 }
-figure img, .two img, figure video, .two video{
-  width: auto; 
+figure img{
   max-height: 500px; 
-  max-width: 1000px; 
   object-fit: cover;
+
 }
-/* #center{
-  display: flex; 
+
+#center{
   justify-content: center;
-  height: 85%; 
-} */
+  align-items: center;
+}
 
 .two{
   display: flex; 
   justify-content: space-between; 
-  gap: 2em;
-  align-items: center;
-  max-height: 500px; 
+  gap: auto;
 }
-.two img, .two video{
-  width: 48%; 
-  max-height: 500px; 
-  max-width: 1000px; 
-  object-fit: cover;
-}
-#white {
-  border: 1.5px solid var(--tertiary);
-  padding: 0.01rem;
-  box-sizing: border-box;
-}
+
 
 hr {
   all: unset;
@@ -240,16 +194,38 @@ hr {
 }
 .hljs-default .hljs,
 .hljs-default .hljs-subst {
-  background-color: var(--tertiary);
+  background-color: var(--bg);
   padding: 1rem;
-  max-width: 75%; 
-  text-wrap: wrap; 
 }
 
-/* .remark-code,
-.remark-inline-code {
-  all: unset;
-} */
+a{
+  text-decoration: underline dashed 0.04em;
+  text-underline-offset: 0.2em;
+  color: rgb(214, 32, 91);
+  text-decoration-style: dashed; 
+}
+figcaption a{
+  color: var(--secondary);
+}
+.grey{
+  color: var(--secondary); 
+  opacity: 70%; 
+}
+.pink{
+  color: rgb(214, 32, 91); 
+}
+.unbold{
+  font-weight: 400; 
+}
+.italic{
+  font-style: italic; 
+}
+.footnote{
+  position: absolute; 
+  bottom: 3em; 
+  right: 3em; 
+  font-size: 0.8rem; 
+}
 
 /* endregion */
 
@@ -274,7 +250,8 @@ hr {
 .remark-toolbar-timer{
   display: none !important; 
 }
-
-mark {
-  background-color: #fff6d1;
+#white {
+  border: 1.5px solid var(--tertiary);
+  padding: 0.01rem;
+  box-sizing: border-box;
 }
