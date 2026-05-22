@@ -1,6 +1,6 @@
 in the last 7 years, i've given a few talks (see a list [here](https://arjunmakesthings.github.io/cv.html)).
 
-now, i'm tired of making (and storing) large-size keynote presentations, and then attempting to retrieve similar content for future-presentations. i've also grown fond of a visual-tyle that i frequent, to document & present my work over the web or otherwise. 
+now, i'm tired of making (and storing) large-size keynote presentations, and then attempting to retrieve similar content for future-presentations. i've also grown fond of a visual-style that i frequent, to document & present my work over the web or otherwise. 
 
 so, this repository will contain all of my future presentations, which are now formatted using the following: 
 
