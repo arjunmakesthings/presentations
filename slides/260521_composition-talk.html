@@ -1,46 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>name</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../assets/scripts/style.css" />
-  </head>
-  <body>
-    <!-- get typogram -->
-    <script src="../assets/scripts/typograms.js"></script>
+<head>
+<title>name</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../assets/scripts/style.css" />
+</head>
+<body>
+<!-- get typogram -->
+<script src="../assets/scripts/typograms.js"></script>
 
-    <!-- reference for everything is here: https://github.com/gnab/remark/wiki -->
+<!-- reference for everything is here: https://github.com/gnab/remark/wiki -->
 
-    <textarea id="source">
+<textarea id="source">
+class: middle left
 
-    </textarea>
-    <script src="../assets/scripts/remark.js"></script>
-    <script>
-      /*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
+# algorithms for expression & truth:
+.footnote.grey[by arjun; for composition #1;<br>at the rotunda, philadelphia;<br>may, 2026.]
+---
 
-      // get actual width and height of browser viewport (including any toolbars)
-      const width = window.innerWidth;
-      const height = window.innerHeight;
 
-      // calculate the ratio as a string like "16:10"
-      const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
-      let w = width;
-      let h = height;
-      const factor = gcd(w, h);
-      w /= factor;
-      h /= factor;
+</textarea>
+<script src="../assets/scripts/remark.js"></script>
+<script>
+/*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
 
-      const dynamicRatio = `${w}:${h}`;
+// get actual width and height of browser viewport (including any toolbars)
+const width = window.innerWidth;
+const height = window.innerHeight;
 
-      var slideshow = remark.create({
-        // ratio: dynamicRatio,
-        ratio: "16:9",
-        slideNumberFormat: "",
-        navigation: {
-          scroll: false,
-        },
-        
-      });
-    </script>
-  </body>
+// calculate the ratio as a string like "16:10"
+const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+let w = width;
+let h = height;
+const factor = gcd(w, h);
+w /= factor;
+h /= factor;
+
+const dynamicRatio = `${w}:${h}`;
+
+var slideshow = remark.create({
+		// ratio: dynamicRatio,
+ratio: "16:9",
+slideNumberFormat: "",
+navigation: {
+scroll: false,
+},
+});
+</script>
+</body>
 </html>
