@@ -278,3 +278,167 @@ hr {
 mark {
   background-color: #fff6d1;
 }
+
+/* =========================================================
+   code blocks — nord-inspired prism-style theme for remark
+   ========================================================= */
+
+/* shared code font */
+.remark-code,
+.remark-inline-code,
+pre,
+code {
+  font-family: "fira-code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: clamp(0.6667rem, 0.6542rem + 0.0625vw, 0.7292rem);
+  line-height: 1.5;
+  font-weight: 300;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* block code containers */
+.remark-code,
+.hljs-default .hljs {
+  background: #2E3440 !important;
+  color: #ECEFF4;
+
+  border-radius: 0.3em;
+
+  padding: 1.2rem !important;
+  margin: 0.75rem 0;
+
+  max-width: 75%;
+  overflow-x: auto;
+
+  box-sizing: border-box;
+
+  text-wrap: nowrap;
+  white-space: pre;
+}
+
+/* inline code */
+.remark-inline-code {
+  background: #2E3440;
+  color: #ECEFF4;
+
+  padding: 0.12em 0.35em;
+  border-radius: 0.3em;
+
+  font-size: 0.8em;
+  white-space: normal;
+}
+
+/* remove previous light theme styling */
+.hljs-default .hljs-subst {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+/* ========================================
+   highlight.js token colours (nord style)
+   ======================================== */
+
+/* comments */
+.hljs-comment,
+.hljs-quote {
+  color: #636F88;
+}
+
+/* punctuation / operators */
+.hljs-punctuation,
+.hljs-operator {
+  color: #81A1C1;
+}
+
+/* keywords */
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #81A1C1;
+}
+
+/* strings */
+.hljs-string,
+.hljs-doctag,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: #A3BE8C;
+}
+
+/* numbers */
+.hljs-number,
+.hljs-literal {
+  color: #B48EAD;
+}
+
+/* functions / titles */
+.hljs-title,
+.hljs-title.function_,
+.hljs-function {
+  color: #88C0D0;
+}
+
+/* classes / types */
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #8FBCBB;
+}
+
+/* variables / attrs */
+.hljs-variable,
+.hljs-attr,
+.hljs-attribute,
+.hljs-property {
+  color: #81A1C1;
+}
+
+/* builtins */
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #88C0D0;
+}
+
+/* tags */
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #81A1C1;
+}
+
+/* regex */
+.hljs-regexp {
+  color: #EBCB8B;
+}
+
+/* emphasis */
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: 600;
+}
+
+/* scrollbar polish */
+.remark-code::-webkit-scrollbar,
+.hljs::-webkit-scrollbar {
+  height: 8px;
+}
+
+.remark-code::-webkit-scrollbar-thumb,
+.hljs::-webkit-scrollbar-thumb {
+  background: #4C566A;
+  border-radius: 999px;
+}
+
+.remark-code::-webkit-scrollbar-track,
+.hljs::-webkit-scrollbar-track {
+  background: transparent;
+}
