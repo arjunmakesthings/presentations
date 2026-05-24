@@ -1,0 +1,6 @@
+planning: 
+
+title: algorithms for expression & truth
+
+the idea is to talk about my work — begin with the background; how i got into programming; what i discovered -> body of work; what i do now.
+
