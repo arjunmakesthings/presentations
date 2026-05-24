@@ -1,17 +1,17 @@
 <!doctype html>
 <html>
-<head>
-<title>algorithms for expression & truth</title>
-<meta charset="utf-8" />
-<link rel="stylesheet" href="../assets/scripts/style.css" />
-</head>
-<body>
-<!-- get typogram -->
-<script src="../assets/scripts/typograms.js"></script>
+  <head>
+    <title>algorithms for expression & truth</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/scripts/style.css" />
+  </head>
+  <body>
+    <!-- get typogram -->
+    <script src="../assets/scripts/typograms.js"></script>
 
-<!-- reference for everything is here: https://github.com/gnab/remark/wiki -->
+    <!-- reference for everything is here: https://github.com/gnab/remark/wiki -->
 
-<textarea id="source">
+    <textarea id="source">
 
 class: middle left
 
@@ -774,35 +774,67 @@ class: middle
 
 ---
 
+class: middle
 
-</textarea>
-<script src="../assets/scripts/remark.js"></script>
-<script>
-/*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
+<figure>
+	<img id = "white" src = "https://arjunmakesthings.github.io/projects/2023-24_digital-painters/2023_de-kooning/1.webp">
+	<figcaption>de kooning; from <a href = "https://arjunmakesthings.github.io/projects/2023-24_digital-painters/page.html">digital painters</a>, 2023-2024.</figcaption>
+</figure>
 
-// get actual width and height of browser viewport (including any toolbars)
-const width = window.innerWidth;
-const height = window.innerHeight;
+---
 
-// calculate the ratio as a string like "16:10"
-const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
-let w = width;
-let h = height;
-const factor = gcd(w, h);
-w /= factor;
-h /= factor;
+class: middle
 
-const dynamicRatio = `${w}:${h}`;
+<figure>
+	<img id = "white" src = "https://arjunmakesthings.github.io/projects/2023-24_digital-painters/2023_grafik/grafik1.webp">
+	<figcaption>grafik; from <a href = "https://arjunmakesthings.github.io/projects/2023-24_digital-painters/page.html">digital painters</a>, 2023-2024.</figcaption>
+</figure>
 
-var slideshow = remark.create({
-		// ratio: dynamicRatio,
-ratio: "16:9",
-slideNumberFormat: "",
-navigation: {
-scroll: false,
-},
-});
+---
 
-</script>
-</body>
+class: middle 
+
+<figure>
+	<video preload="yes" muted playsinline autoplay nocontrols loop>
+	  <source
+		src="https://arjunmakesthings.github.io/projects/2023-24_digital-painters/2023_grafik/grafikVid.mp4"
+		type="video/mp4"
+	  />
+	  your browser does not support videos.
+	</video>
+	<figcaption>grafik; from <a href = "https://arjunmakesthings.github.io/projects/2023-24_digital-painters/page.html">digital painters</a>, 2023-2024.</figcaption>
+</figure>
+
+---
+
+</textarea
+    >
+    <script src="../assets/scripts/remark.js"></script>
+    <script>
+      /*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
+
+      // get actual width and height of browser viewport (including any toolbars)
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      // calculate the ratio as a string like "16:10"
+      const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+      let w = width;
+      let h = height;
+      const factor = gcd(w, h);
+      w /= factor;
+      h /= factor;
+
+      const dynamicRatio = `${w}:${h}`;
+
+      var slideshow = remark.create({
+        // ratio: dynamicRatio,
+        ratio: "16:9",
+        slideNumberFormat: "",
+        navigation: {
+          scroll: false,
+        },
+      });
+    </script>
+  </body>
 </html>
