@@ -272,7 +272,7 @@ hr {
   background-repeat: no-repeat ; */
 }
 .remark-toolbar-timer{
-  display: none !important; 
+  /* display: none !important;  */
 }
 
 mark {
