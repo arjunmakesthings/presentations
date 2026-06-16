@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <title>name</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/scripts/style.css" />
+  </head>
+  <body>
+    <!-- get typogram -->
+    <script src="../assets/scripts/typograms.js"></script>
+
+    <!-- reference for everything is here: https://github.com/gnab/remark/wiki -->
+
+    <textarea id="source">
+
+  class: middle left
+
+  # make typographic choices
+
+  ---
+
+  class: middle
+
+  <figure>
+    <img src = "../assets/media/260616_npt@rc/text.webp">
+  </figure>
+
+  ---
+
+  class: middle
+
+  <figure>
+    <img src = "../assets/media/260616_npt@rc/check-in.webp">
+  </figure>
+
+  ---
+
+  class: middle
+
+  <figure>
+    <img src = "../assets/media/260616_npt@rc/code.webp">
+  </figure>
+
+  ---
+
+  class: middle
+
+  <figure>
+    <img id = "white" src = "../assets/media/260616_npt@rc/email.webp">
+  </figure>
+
+  ---
+
+  class: middle
+
+  <figure>
+    <img id = "white" src = "../assets/media/260616_npt@rc/website.webp">
+  </figure>
+
+  ---
+
+  class: middle
+
+  <figure>
+    <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fegyptian-hieroglyphic-writing-k8e9iss2ezv79dmu.jpg&f=1&nofb=1&ipt=59116775c2d7cef93188916653d74c9047f9748feb9c6b17a9d7d591c83cb78d">
+    <figcaption>always tell where it's from or whatever.</figcaption>
+  </figure>
+
+</textarea
+    >
+    <script src="../assets/scripts/remark.js"></script>
+    <script>
+      /*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
+
+      // get actual width and height of browser viewport (including any toolbars)
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      // calculate the ratio as a string like "16:10"
+      const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+      let w = width;
+      let h = height;
+      const factor = gcd(w, h);
+      w /= factor;
+      h /= factor;
+
+      const dynamicRatio = `${w}:${h}`;
+
+      var slideshow = remark.create({
+        // ratio: dynamicRatio,
+        ratio: "16:9",
+        slideNumberFormat: "",
+        navigation: {
+          scroll: false,
+        },
+      });
+    </script>
+  </body>
+</html>
