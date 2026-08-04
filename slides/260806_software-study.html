@@ -1,0 +1,236 @@
+<!-- given at recurse center; august 06th, 2026. -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>260806_presentation@rc</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/scripts/style.css" />
+  </head>
+  <body>
+    <!-- get typogram -->
+    <script src="../assets/scripts/typograms.js"></script>
+
+    <!-- reference for everything is here: https://github.com/gnab/remark/wiki -->
+
+    <textarea id="source">
+
+class: middle left
+
+# emergence study:
+
+.footnote[arjun;<br>august, 2026 @recurse-center.]
+
+---
+
+class: middle center
+
+<figure>
+<img id = "white"src = "https://arjunmakesthings.github.io/itp-blog/z_images/Screenshot-2026-03-17-at-00.05.31.webp">
+<figcaption>from the dynamics of complex systems, by yaneer-ban-yam.</figcaption>
+</figure>
+
+???
+
+in dynamics of complex systems, yaneer-bar-yam introduces the idea of emergent complexity:
+
+---
+
+class: middle left
+
+## a system composed of simple parts where the collective behaviour is complex.
+
+--
+
+.grey[(the outcome can't be inferred solely by studying individual parts.)]
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/260804_software-study/ca_1.webp">
+<figcaption>1-d cellular automata; from a new kind of science, by stephen wolfram.</figcaption>
+</figure>
+
+---
+
+class: middle 
+
+``` js
+// define rule:
+const rule = {
+  0b111: 1,
+  0b110: 0,
+  0b101: 1,
+  0b100: 0,
+  0b011: 0,
+  0b010: 1,
+  0b001: 0,
+  0b000: 1,
+};
+```
+
+<figcaption>rule-set. </figcaption>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/260804_software-study/ca_2.webp">
+<figcaption>1-d cellular automata; from a new kind of science, by stephen wolfram.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "https://www.wolframscience.com/nks/img/inline/page1186b.png">
+<figcaption>1-d cellular automata ruleset; from <a href = "https://www.wolframscience.com/nks/notes-12-10--minimal-cellular-automata-for-sequences/" target = "_blank">wolframscience</a>.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/260804_software-study/ca_2.webp">
+<figcaption>1-d cellular automata; from a new kind of science, by stephen wolfram.</figcaption>
+</figure>
+
+---
+
+class: middle left
+
+```js
+function draw_zero(x, y) {
+  //can be whatever you want:
+}
+
+function draw_one(x, y) {
+  //can be whatever you want:
+}
+```
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/260804_software-study/ca_3.webp">
+<figcaption>1-d cellular automata; same-rules; interpretation-1.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/260804_software-study/ca_4.webp">
+<figcaption>1-d cellular automata; same-rules; interpretation-2.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/260804_software-study/ca_5.webp">
+<figcaption>1-d cellular automata; same-rules; interpretation-3.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/260804_software-study/ca_6.webp">
+<figcaption>1-d cellular automata; same-rules; interpretation-4.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<div class = "two">
+<img id = "white" src = "../assets/media/260804_software-study/ca_3.webp">
+<img id = "white" src = "../assets/media/260804_software-study/ca_5.webp">
+</div>
+<figcaption>same system; different interpretations.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+## same underlying base-system, but different 'software-interpretations'.
+
+---
+
+class: middle
+
+<figure>
+<img src = "../assets/media/260804_software-study/casey-reas_rules.webp">
+<figcaption>process compendium ruleset, by casey reas.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img src = "https://www.bitforms.art/wp-content/uploads/2020/02/cr_process18_install_1_w-1170x585-1.jpg">
+<figcaption>process-18, by casey-reas.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img src = "../assets/media/260804_software-study/casey-reas_rules.webp">
+<figcaption>process compendium ruleset, by casey reas.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+# base-system:
+
+
+
+</textarea
+    >
+    <script src="../assets/scripts/remark.js"></script>
+    <script>
+      /*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
+
+      // get actual width and height of browser viewport (including any toolbars)
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      // calculate the ratio as a string like "16:10"
+      const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+      let w = width;
+      let h = height;
+      const factor = gcd(w, h);
+      w /= factor;
+      h /= factor;
+
+      const dynamicRatio = `${w}:${h}`;
+
+      var slideshow = remark.create({
+        // ratio: dynamicRatio,
+        ratio: "16:9",
+        slideNumberFormat: "",
+        navigation: {
+          scroll: false,
+        },
+      });
+    </script>
+  </body>
+</html>
