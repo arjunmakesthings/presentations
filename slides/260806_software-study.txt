@@ -1,0 +1,70 @@
+in dynamics of complex systems, yaneer-bar-yam introduces this idea of 'emergent complexity'.
+
+---
+
+meaning: 
+
+read from slide. 
+
+---
+
+where the outcome can't be determined by studying individual parts.
+
+---
+
+the simplest example of this is one-dimensional cellular automata.
+
+---
+
+AFTER PARAMETERS: -> 
+
+so here are some interpretations: 
+
+---
+
+interpretation #2.0: missed connections.
+
+thought: 
+we walk by so many people. when they are within a certain distance, we have a short window of time to connect with each other in physical-space, until we are distant again. 
+
+expression: 
+draw a line from each being to other beings around them within a specific radius, with the distance between them signifying the intensity of a possible connection.
+
+parameters: 
+population: 1000,
+day_length: 10,
+
+notice that connections don't disappear, but fade over time.
+
+---
+
+interpretation #3.0: all the world's a mesh.
+
+thought: 
+all beings are connected to each other via an invisible mesh. 
+
+expression: 
+treat the position of each being as a vertex. generate a triangular-mesh by finding tuples close to each other, so that no point is inside a face. keep generating the mesh over time, as beings move.
+
+parameters: 
+population: 1000
+day-length: 5
+
+---
+
+images of interpretation-3 at different points in time. 
+
+---
+
+interpretation #4.1: meetings are ripples.
+
+thought: 
+meeting people can be resounding. when two beings meet, a ripple is sent through space & time; that may affect other beings. 
+
+expression: 
+connect beings close to each other with a black line. when two beings collide, send out a circular ripple expanding from the point of collision. the closer the beings are, the further the ripple goes. lay this out over time.
+
+parameters: 
+population: 500
+day-length: 10
+
