@@ -14,11 +14,33 @@ where the outcome can't be determined by studying individual parts.
 
 the simplest example of this is one-dimensional cellular automata.
 
+....
+
 ---
 
 AFTER PARAMETERS: -> 
 
-so here are some interpretations: 
+the parameters are only two: population & day length.
+
+here are 4 interpretations. 
+
+---
+
+interpretation #1.5: born in pairs. 
+
+thought: 
+beings are destined to be with someone that they were born close to (in proximity & age). however, as they live out their lives, they may be close or separated in the world. thought is borrowed from the red thread of fate.
+
+expression:
+draw a set of red lines between a being & the person that they're "destined" to be with, over time. the closer they are to each other, the more red lines are drawn, & the stronger they are (in colour and density).
+
+parameters: 
+population = 4 (shown); 
+day length = 10;
+
+---
+
+still image, laid out over time. when all beings of pairs being visualized die, a still image is generated.
 
 ---
 
@@ -34,7 +56,7 @@ parameters:
 population: 1000,
 day_length: 10,
 
-notice that connections don't disappear, but fade over time.
+notice that the connections don't disappear, but fade as beings move away from each other.
 
 ---
 
@@ -67,4 +89,3 @@ connect beings close to each other with a black line. when two beings collide, s
 parameters: 
 population: 500
 day-length: 10
-
