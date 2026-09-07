@@ -11,6 +11,7 @@ so, this repository will contain all of my future presentations, which are now f
 - if a piece of media has to be reused in a presentation, it just references the file-path on this github repository. 
 - all shared presentations (i.e `.html` file used to deliver my presentation) are stored in ../slides.
 - diagrams, flowcharts, circuits are either sketched on my ipad or made using [google-typograms](https://google.github.io/typograms/).
+- all presentations are available via `./index.html`, because sometimes i may want to share a publicly-viewable link with someone quickly.
 
 ---
 
