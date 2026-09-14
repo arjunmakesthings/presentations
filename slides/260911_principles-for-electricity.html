@@ -1,112 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>working principles to deal with electricity</title>
-<meta charset="utf-8" />
-<link rel="stylesheet" href="../assets/scripts/style.css" />
-</head>
-<body>
-<!-- get typogram -->
-<script src="../assets/scripts/typograms.js"></script>
+  <head>
+    <title>working principles to deal with electricity</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/scripts/style.css" />
+  </head>
+  <body>
+    <!-- get typogram -->
+    <script src="../assets/scripts/typograms.js"></script>
 
-<!-- reference for everything is here: https://github.com/gnab/remark/wiki -->
+    <!-- reference for everything is here: https://github.com/gnab/remark/wiki -->
 
-<textarea id="source">
+    <textarea id="source">
 
-  class: middle
+class: middle
 
-  # working principles to deal with electricity.
+# working principles to deal with electricity.
 
-  .footnote[for ima-creative-computing; by arjun; 260911. <br>written draft [here](https://arjunmakesthings.github.io/itp-blog/working-principles-to-deal-with-electricity).] 
+.footnote[for ima-creative-computing; by arjun; 260911. <br>written draft [here](https://arjunmakesthings.github.io/itp-blog/working-principles-to-deal-with-electricity).] 
 
-  ---
+---
 
-  class: top
+class: top
 
-  # the general premise:
-  --
+# the general premise:
+--
 
-  ## tiny, excited beings move from '+' to '-' of a power source, and work to make things happen in our world.
+## tiny, excited beings move from '+' to '-' of a power source, and work to make things happen in our world.
 
-  ---
+---
 
-  class: middle
+class: middle
 
-  <figure>
-    <img src = "../assets/media/260913_principles-of-electricity/Bv4N.gif" id = "white">
-    <figcaption>closed vs open circuit.</figcaption>
-  </figure>
+<figure>
+  <img src = "../assets/media/260913_principles-of-electricity/Bv4N.gif" id = "white">
+  <figcaption>closed vs open circuit.</figcaption>
+</figure>
 
-  ---
+---
 
-  class: top
+class: top
 
-  # conductive vs insulating:
+# conductive vs insulating:
 
-  --
+--
 
-  ## beings are picky, and only travel on paths made of certain materials.
-  
-  ---
+## beings are picky, and only travel on paths made of certain materials.
 
-  class: top
-  # voltage:
+---
 
-  --
+class: top
+# load: 
 
-  ## the desire of beings to go from '+' to '-'; corresponding to their energy. 
+--
 
-  ---
+## any object that makes beings work.
 
-  class: top 
+---
 
-  # short-circuit:
+class: top 
 
-  --
+# short-circuit:
 
-  ## beings will cause chaos on the '-' side if you don't make them work the right amount. 
+--
 
-  ---
+## beings will cause chaos on the '-' side if you don't make them work the right amount. 
 
-  class: top
+---
 
-  # current:
+class: top
 
-  --
+# voltage:
 
-  ## the number of beings that can travel on a path in one unit of time. the wider the path, the more beings can travel through it (hence thicker wires allow more current to pass through).
+--
 
-  ---
+## the desire of beings to go from '+' to '-'; corresponding to their energy. 
+
+---
+
+class: top
+
+# current:
+
+--
+
+## the number of beings that can travel on a path in one unit of time. the wider the path, the more beings can travel through it (hence thicker wires allow more current to pass through).
+
+---
+
+# resistance: 
+
+--
+
+## these are tiny bumps that reduce the energy and, therefore, number of beings that are able to pass through it.
+
+---
+
+# ohm's law:
 
 
-</textarea>
-<script src="../assets/scripts/remark.js"></script>
-<script>
-/*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
 
-// get actual width and height of browser viewport (including any toolbars)
-const width = window.innerWidth;
-const height = window.innerHeight;
+</textarea
+    >
+    <script src="../assets/scripts/remark.js"></script>
+    <script>
+      /*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
 
-// calculate the ratio as a string like "16:10"
-const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
-let w = width;
-let h = height;
-const factor = gcd(w, h);
-w /= factor;
-h /= factor;
+      // get actual width and height of browser viewport (including any toolbars)
+      const width = window.innerWidth;
+      const height = window.innerHeight;
 
-const dynamicRatio = `${w}:${h}`;
+      // calculate the ratio as a string like "16:10"
+      const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+      let w = width;
+      let h = height;
+      const factor = gcd(w, h);
+      w /= factor;
+      h /= factor;
 
-var slideshow = remark.create({
-// ratio: dynamicRatio,
-ratio: "16:9",
-slideNumberFormat: "",
-navigation: {
-scroll: false,
-},
+      const dynamicRatio = `${w}:${h}`;
 
-});
-</script>
-</body>
+      var slideshow = remark.create({
+        // ratio: dynamicRatio,
+        ratio: "16:9",
+        slideNumberFormat: "",
+        navigation: {
+          scroll: false,
+        },
+      });
+    </script>
+  </body>
 </html>
