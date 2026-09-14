@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>name</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../assets/scripts/style.css" />
+</head>
+<body>
+<!-- get typogram -->
+<script src="../assets/scripts/typograms.js"></script>
+
+<!-- reference for everything is here: https://github.com/gnab/remark/wiki -->
+
+<textarea id="source">
+
+  class: middle
+
+  # working principles to deal with electricity.
+
+  .footnote[for ima-creative-computing; by arjun; 260911. <br>written draft [here](https://arjunmakesthings.github.io/itp-blog/working-principles-to-deal-with-electricity).] 
+
+  ---
+
+  class: top
+
+  # the general premise:
+  --
+
+  ## tiny, excited beings move from '+' to '-' of a power source, and work to make things happen in our world.
+
+  ---
+
+  class: middle
+
+  <figure>
+    <img src = "../assets/media/260913_principles-of-electricity/Bv4N.gif" id = "white">
+    <figcaption>closed vs open circuit.</figcaption>
+  </figure>
+
+  ---
+
+  class: top
+
+  # conductive vs insulating:
+
+  --
+
+  ## beings are picky, and only travel on paths made of certain materials.
+  
+  ---
+
+  class: top
+  # voltage:
+
+  --
+
+  ## the desire of beings to go from '+' to '-'; corresponding to their energy. 
+
+  ---
+
+  class: top 
+
+  # short-circuit:
+
+  --
+
+  ## beings will cause chaos on the '-' side if you don't make them work the right amount. 
+
+  ---
+
+  class: top
+
+  # current:
+
+  --
+
+  ## the number of beings that can travel on a path in one unit of time. the wider the path, the more beings can travel through it (hence thicker wires allow more current to pass through).
+
+  ---
+
+
+</textarea>
+<script src="../assets/scripts/remark.js"></script>
+<script>
+/*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
+
+// get actual width and height of browser viewport (including any toolbars)
+const width = window.innerWidth;
+const height = window.innerHeight;
+
+// calculate the ratio as a string like "16:10"
+const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+let w = width;
+let h = height;
+const factor = gcd(w, h);
+w /= factor;
+h /= factor;
+
+const dynamicRatio = `${w}:${h}`;
+
+var slideshow = remark.create({
+// ratio: dynamicRatio,
+ratio: "16:9",
+slideNumberFormat: "",
+navigation: {
+scroll: false,
+},
+
+});
+</script>
+</body>
+</html>
