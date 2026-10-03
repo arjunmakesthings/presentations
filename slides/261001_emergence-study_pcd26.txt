@@ -135,26 +135,42 @@ however, the direction of lines in each square is left to the artist who execute
 
 ---
 
+therefore, two artists might produce a wholly different interpretation. 
+
+---
+
+casey reas is a software artist who explored this premise in process compendium. 
+
+he defines a system by combining simple forms such as a circle & a line, and simple behaviours such as move in a straight line.
+
+combinations of these result in what he calls 'elements'. 
+
+---
+
+showing just the elements, however, would not be artistically interesting. therefore, he interprets them — exposing different relationships from the base system that he finds interesting. for example, here, he draws quadrilaterals between the endpoints of each pair of elements that touch each other.
+
+---
+
+that produces imagery like this. 
+
+---
+
+what bothers me about systems like these is that the creation rules is so arbitrary.
+
+---
+
+and, so, my base system is inspired by the daily movement of people in new-york.
+
+---
+
+this is the base system.
+
+(read)
+
+---
 
 
 
-
-
-
-
-
-
-
-
-itp pulled me in all sorts of different directions, but i rediscovered this line of enquiry at the recurse center, 
-
-which is a self-directed programming retreat in new-york for curious programmers. 
-
-and i met some of the best programmers i've ever met in my life. 
-
-this whole talk is about that line of enquiry. 
-
-so, i present emergence study. 
 
 ---
 
