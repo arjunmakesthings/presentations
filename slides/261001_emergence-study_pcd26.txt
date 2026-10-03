@@ -24,3 +24,20 @@ so, i present emergence study.
 
 ---
 
+interpretations: 
+
+/*
+interpretation #1: born in pairs.
+
+thought: 
+beings are destined to be with someone that they were born close to (in proximity & age). however, as they live out their lives, they may be close or separated in the world. thought is borrowed from the red thread of fate.
+
+expression:
+draw a set of red lines between two beings that are 'destined' to be together, over time. the closer they are to each other in space, the more red lines are drawn & the stronger they are (in color & density). 
+
+parameters:
+population = 4 (shown). 
+day length = 48;
+
+# 261002.
+*/
