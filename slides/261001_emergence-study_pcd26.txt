@@ -1,0 +1,26 @@
+my name is arjun, and i'm a graduate student about two floors up — at itp, which is also the one of the hosts for this event.
+
+i got my undergraduate-degree in design, and worked in behavior-design & product-design in india before i moved here.
+
+towards the later part of my undergraduate degree, i discovered & fell in love with programming — as a way to understand, encode & communicate observed & lived experience. 
+
+in fact, i came to itp wanting to explore this further. 
+
+---
+
+the opening paragraph of my admissions essay reads:
+
+--
+
+itp pulled me in all sorts of different directions, but i rediscovered this line of enquiry at the recurse center, 
+
+which is a self-directed programming retreat in new-york for curious programmers. 
+
+and i met some of the best programmers i've ever met in my life. 
+
+this whole talk is about that line of enquiry. 
+
+so, i present emergence study. 
+
+---
+

@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+  <head>
+    <title>emergence-study @pcd26</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/scripts/style.css" />
+  </head>
+  <body>
+    <!-- get typogram -->
+    <script src="../assets/scripts/typograms.js"></script>
+
+    <!-- reference for everything is here: https://github.com/gnab/remark/wiki -->
+
+    <textarea id="source">
+
+class: middle
+
+# emergence-study:
+
+.footnote[arjun; <br>processing-community-day, <br> new-york, 2026.]
+
+---
+
+class: middle center
+
+<figure>
+<img id = "white"src = "https://arjunmakesthings.github.io/itp-blog/z_images/Screenshot-2026-03-17-at-00.05.31.webp">
+<figcaption>from <em>dynamics of complex systems</em>, by yaneer-bar-yam.</figcaption>
+</figure>
+
+---
+
+class: middle left
+
+## a system composed of simple parts where the collective behaviour is complex.
+
+--
+
+.grey[(the outcome can't be determined by studying individual parts.)]
+
+---
+
+class: middle
+
+<figure>
+  <div class = "two">
+    <img id = "white" src="https://mdpi-res.com/cdn-cgi/image/quality=100/https://mdpi-res.com/processes/processes-10-02337/article_deploy/html/images/processes-10-02337-g006.png?1668590985">
+    <img id = "white" src="https://mdpi-res.com/cdn-cgi/image/quality=100/https://mdpi-res.com/processes/processes-10-02337/article_deploy/html/images/processes-10-02337-g007.png?1668591000">
+  </div>
+  <figcaption>correlation of cellular automata & formation of snowflakes; from <a href = "https://www.mdpi.com/2227-9717/10/11/2337">this</a> article.</figcaption>
+  </figure>
+
+---
+
+class: middle
+
+<figure>
+  <img id = "white" src = "https://mdpi-res.com/cdn-cgi/image/quality=100/https://mdpi-res.com/processes/processes-10-02337/article_deploy/html/images/processes-10-02337-g002.png?1668590994">
+  <figcaption>automata rules for snowflake dendrite formation; from <a href = "https://www.mdpi.com/2227-9717/10/11/2337">this</a> article.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+  <img src = "https://images.unsplash.com/photo-1758270704763-22072a90d3b6?q=80&w=3731&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+  <figcaption>group of friends; from <a href = "https://www.mdpi.com/2227-9717/10/11/2337">unsplash</a>.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+## When I think about the world, I imagine a system — many organisms perpetually interact with one-another, each governed by its own set of rules, collectively unpredictable & complex; with the occasional sprinkle of universal noise. My artistic practice is wholly devoted towards the pursuit of understanding and representing this semi-ordered nature of the world.
+
+<figcaption>opening paragraph from <a href = "https://arjunmakesthings.github.io/notes/2024_itp-personal-statement/page.html">itp-personal-statement</a>, 2024.</figcaption>
+
+---
+
+class: middle
+
+<figure>
+  <img id = "white" src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd29xw0ra2h4o4u.cloudfront.net%2Fassets%2Flogo_opengraph-2325537a191b8371ffd077b0aacee12e8183069b9997ce069d0ae484f4b8ed8c.png&f=1&nofb=1&ipt=ce8e662853fabf6bb635b70cb235edcd0bc8d8b9bffb208086d5f92f09a22751&ipo=images">
+  <figcaption>recurse-center logo.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+## When I think about the world, I imagine a system — many organisms perpetually interact with one-another, each governed by its own set of rules, collectively unpredictable & complex; with the occasional sprinkle of universal noise. My artistic practice is wholly devoted towards the pursuit of understanding and representing this semi-ordered nature of the world.
+
+<figcaption>opening paragraph from <a href = "https://arjunmakesthings.github.io/notes/2024_itp-personal-statement/page.html">itp-personal-statement</a>, 2024.</figcaption>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/261001_emergence-study/cell.webp">
+<figcaption>cell; state: 0 / dead / off.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/261001_emergence-study/cell_alive.webp">
+<figcaption>cell; state: 1 / alive / on.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/260804_software-study/ca_1.webp">
+<figcaption>1-d cellular automata; from a new kind of science, by stephen wolfram.</figcaption>
+</figure>
+
+---
+
+class: middle 
+
+``` js
+// define rule:
+const rule = {
+  0b111: 1,
+  0b110: 0,
+  0b101: 1,
+  0b100: 0,
+  0b011: 0,
+  0b010: 1,
+  0b001: 0,
+  0b000: 1,
+};
+```
+
+<figcaption>rule-set.</figcaption>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/260804_software-study/ca_2.webp">
+<figcaption>1-d cellular automata; from a new kind of science, by stephen wolfram.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "https://www.wolframscience.com/nks/img/inline/page1186b.png">
+<figcaption>1-d cellular automata ruleset; from <a href = "https://www.wolframscience.com/nks/notes-12-10--minimal-cellular-automata-for-sequences/" target = "_blank">wolframscience</a>.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/261001_emergence-study/cell.webp">
+<figcaption>cell; state: 0 / dead / off.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/261001_emergence-study/cell_alive.webp">
+<figcaption>cell; state: 1 / alive / on.</figcaption>
+</figure>
+
+---
+
+class: middle left
+
+```js
+function draw_zero(x, y) {
+  //can be whatever you want:
+}
+
+function draw_one(x, y) {
+  //can be whatever you want:
+}
+```
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/260804_software-study/ca_3.webp">
+<figcaption>1-d cellular automata; same-rules; interpretation-1.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/260804_software-study/ca_4.webp">
+<figcaption>1-d cellular automata; same-rules; interpretation-2.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/260804_software-study/ca_5.webp">
+<figcaption>1-d cellular automata; same-rules; interpretation-3.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/260804_software-study/ca_6.webp">
+<figcaption>1-d cellular automata; same-rules; interpretation-4.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<div class = "two">
+<img id = "white" src = "../assets/media/260804_software-study/ca_3.webp">
+<img id = "white" src = "../assets/media/260804_software-study/ca_5.webp">
+</div>
+<figcaption>same system; different interpretations.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+## same underlying base-system, but different 'software-interpretations'.
+
+---
+
+
+class: middle left
+
+## A 12" (30 cm) grid covering the black wall.
+
+## Within each 12" (30 cm) square, a vertical, horizontal, diagonal right or diagonal left line bisecting the square.
+
+## All squares are filled. (The direction of the line in each square is determined by the drafter). 
+
+<figcaption>Wall Drawing #392 (1983), by sol lewitt.</figcaption>
+
+---
+
+class: middle
+
+<figure>
+<img id = "white" src = "../assets/media/261001_emergence-study/sol-1.webp">
+<figcaption>from <a href = "https://solvingsol.com/solutions" target = "_blank">solvingsol.com</a>, by mcshiz.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+  <img src = "../assets/media/261001_emergence-study/sol-2.webp">
+  <figcaption>from <a href = "https://solvingsol.com/solutions" target = "_blank">solvingsol.com</a>, by 1wheel.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+  <div class = "two">
+    <img src="../assets/media/261001_emergence-study/sol-2.webp">
+    <img id = "white" src="../assets/media/261001_emergence-study/sol-1.webp">
+  </div>
+  <figcaption>two interpretations of Wall Drawing #392 (1983), from <a href = "https://solvingsol.com/solutions" target = "_blank">solvingsol.com</a>.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img src = "../assets/media/260804_software-study/casey-reas_rules.webp">
+<figcaption>process compendium ruleset, by casey reas.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img src = "../assets/media/260804_software-study/reas_process_18.webp">
+<figcaption>process 18, by casey reas.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+<img src = "https://www.bitforms.art/wp-content/uploads/2020/02/cr_process18_install_1_w-1170x585-1.jpg">
+<figcaption>process-18, by casey-reas.</figcaption>
+</figure>
+
+
+---
+
+class: middle
+
+<figure>
+<img src = "../assets/media/260804_software-study/casey-reas_rules.webp">
+<figcaption>process compendium ruleset, by casey reas.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+<figure>
+  <video preload="yes" muted playsinline autoplay nocontrols loop>
+    <source
+      src="../assets/media/261001_emergence-study/12127641_2320_1080_30fps.mp4"
+      type="video/mp4"
+    />
+    your browser does not support videos.
+  </video>
+  <figcaption>people moving in new-york; from <a href = "https://www.pexels.com/video/bustling-new-york-city-street-scene-29598934/">pexels</a>, by karma rayshar.</figcaption>
+</figure>
+
+---
+
+class: middle
+
+# base-system:
+
+---
+
+class: middle
+
+## there is a <mark>world</mark>, and it consists of many <mark>places</mark>.
+
+---
+
+class: middle
+
+## the world contains a <mark>population</mark> of <mark>beings</mark> — who are born, sustained, and killed over <mark>time</mark> by the world.
+
+---
+
+class: middle
+
+## the beings express life through <mark>movement</mark>, and movement is governed by a <mark>schedule</mark>.
+
+---
+
+class: middle
+
+## both the schedule & movement are governed by <mark>age</mark> (for eg: the closer you are to your 20s, the more likely you are to have a busier schedule (and thereby have to move more)). 
+
+
+</textarea
+    >
+    <script src="../assets/scripts/remark.js"></script>
+    <script>
+      /*this is used to create a slideshow. by default, it creates a slideshow for everything inside "source". all config options are here: https://github.com/gnab/remark/wiki/Configuration*/
+
+      // get actual width and height of browser viewport (including any toolbars)
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      // calculate the ratio as a string like "16:10"
+      const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+      let w = width;
+      let h = height;
+      const factor = gcd(w, h);
+      w /= factor;
+      h /= factor;
+
+      const dynamicRatio = `${w}:${h}`;
+
+      var slideshow = remark.create({
+        // ratio: dynamicRatio,
+        ratio: "16:9",
+        slideNumberFormat: "",
+        navigation: {
+          scroll: false,
+        },
+      });
+    </script>
+  </body>
+</html>
