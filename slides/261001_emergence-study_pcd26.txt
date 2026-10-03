@@ -171,6 +171,9 @@ this is the base system.
 
 
 
+---
+
+interpretations:
 
 ---
 
@@ -194,6 +197,10 @@ day length = 48;
 
 ---
 
+2 images.
+
+---
+
 interpretation #2: missed connections.
 
 thought:
@@ -208,6 +215,10 @@ day_length: 48,
 max_mass: 6,
 
 2nd october, 2026.
+
+---
+
+notice how the lines don't just disappear. they reduce as didstance increases.
 
 ---
 
@@ -228,7 +239,9 @@ population: 1000.
 
 ---
 
-notice the impact of the mesh on the world, over time.
+1 image.
+
+series of three -> notice the impact of the mesh on the world, over time.
 
 ---
 
@@ -251,6 +264,12 @@ max_mass: 20.
 
 ---
 
+3 images. 
+
+third -> detail.
+
+---
+
 /*
 interpretation #5: the collective fabric of age & experience.
 
@@ -269,3 +288,34 @@ day_length: 48.
 
 ---
 
+3 images.
+
+third -> detail.
+
+---
+
+/*
+interpretation #6: separation.
+
+thought:
+beings in different locations hold opposing views, and are separated over time. 
+
+expression:
+for each group of beings at a particular place, average out the direction that they arrived from, and treat it as an infinite line. for each of these lines, draw an orthogonal line-segment between the place and its neighboring place in one of two colors. draw these lines over time.
+
+parameters:
+population: 500,
+day_length: 48.
+
+3rd october, 2026.
+*/
+
+---
+
+3 images: 
+
+third -> detail.
+
+---
+
+thank you.
